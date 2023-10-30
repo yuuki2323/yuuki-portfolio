@@ -1,0 +1,11 @@
+.loop{
+  animation: loop-list 20s linear infinite;
+}
+@keyframes loop-list {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}

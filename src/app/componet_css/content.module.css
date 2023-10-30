@@ -1,0 +1,23 @@
+.must{
+  background-color: rgb(219 234 254);
+  padding:2px 4px;
+  margin:4px;
+  border-radius: 16%;
+}
+
+.inputWidth{
+  width: 100%;
+border:1px solid rgb(31 41 55);
+border-radius: 4px;
+height:38px;
+background-color: rgba(242, 248, 255, 0.625);
+padding-left:24px;
+font-size:20px;
+}
+.textarea{
+  width: 100%;
+  border:1px solid rgb(31 41 55);
+  border-radius: 4px;
+  padding-left:24px;
+font-size:20px;
+}

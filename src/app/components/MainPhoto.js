@@ -10,7 +10,7 @@ const MainPhoto = () => {
       <div className="max-w-5xl h-96 mx-auto  my-12  flex gap-20 ">
       <div>
         <p className={`${css.text} ${TitleFont.className}`}>
-          Yuki's
+          Yuki&apos;s
           <br />
           Portfolio
         </p>

@@ -4,6 +4,7 @@ import MainPhoto from './components/MainPhoto'
 import Profile from './components/Profile'
 import Skill from './components/Skill'
 import Work from './components/Work'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
      <Profile/>
      <Skill/>
      <Work/>
+     <Contact/>
     </main>
     
     </>
