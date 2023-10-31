@@ -7,16 +7,16 @@ import { TitleFont } from '../fonts/TitleFont';
 
 const Header = () => {
   const navi = [
-    { nav: "Profile", href: "/" },
-    { nav: "Skill", href: "/" },
-    { nav: "Works", href: "/" },
-    { nav: "Contact", href: "/" },
+    { nav: "Profile", href: "#profile" },
+    { nav: "Skill", href: "#skill" },
+    { nav: "Works", href: "#work" },
+    { nav: "Contact", href: "#contact" },
   ];
 
   // {' ${css.shadow-bottom}`}
   return (
-    <header className={`px-4 ${css.shadow}`}>
-      <div className="h-24 flex justify-between items-center max-w-5xl mx-auto">
+    <header className={`px-4 ${css.shadow} `}>
+      <div className="h-24 flex justify-between items-center max-w-5xl mx-auto ">
         <h1 className="flex justify-center items-center h-20">
           <Link href="/">
             <Image src={logo} width="112" alt="logo" className="h-16 " />
@@ -28,8 +28,8 @@ const Header = () => {
             <ul className="flex gap-6 ">
               {navi.map(({ nav, href }) => {
                 return (
-                  <li className={`h-20 w-28 `}>
-                    <Link href={href} className={`flex justify-center items-center h-20 w-22 relative after:absolute after:content-[''] after:block after:h-0.5 after:bg-black after:w-0 after:bottom-4 after:left-1 
+                  <li className={`h-20 w-28 `} key={nav}>
+                    <Link href={href} className={`scroll-smooth flex justify-center items-center h-20 w-22 relative after:absolute after:content-[''] after:block after:h-0.5 after:bg-black after:w-0 after:bottom-4 after:left-1 
                     after:transition-all after:duration-300 after:ease-out
                     hover:after:w-11/12 `}>
                       <span className={`text-3xl font-medium ${TitleFont.className}`}>{nav}</span>

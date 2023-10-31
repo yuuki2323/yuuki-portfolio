@@ -5,7 +5,7 @@ import takoyaki from "/public/takoyaki.png";
 
 const Profile = () => {
   return (
-    <section className="bg-blue-100 py-20">
+    <section className="bg-blue-100 py-20" id="profile">
       <div className="max-w-5xl mx-auto ">
         
         <h2

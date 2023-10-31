@@ -11,7 +11,7 @@ import loop from "../componet_css/skill.module.css"
 
 const Skill = () => {
   return (
-    <section className=" py-20">
+    <section className=" py-20" id="skill">
       <div className="max-w-5xl mx-auto ">
         <h2
           className={`  text-center text-8xl tracking-wider ${TitleFont.className} text-gray-800`}

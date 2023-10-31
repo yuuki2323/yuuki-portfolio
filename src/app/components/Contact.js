@@ -1,18 +1,31 @@
+"use client"
 import React from "react";
+import { useForm } from "react-hook-form"
 import { TitleFont } from "../fonts/TitleFont";
-import css from "../componet_css/content.module.css"
+import css from "../componet_css/content.module.css";
+
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+const submit = (data) =>{
+  console.log(data);
+}
+
   return (
-    <section className="py-20">
+    <section className="py-20" id="contact">
       <dev className="max-w-5xl mx-auto ">
         <h2
           className={` mb-8 text-center text-8xl tracking-wider ${TitleFont.className} text-gray-800`}
         >
           Contact
         </h2>
-
-        <form className="max-w-3xl mx-auto">
-          <dl >
+        <form onSubmit={handleSubmit(submit)} className="max-w-3xl mx-auto">
+          <dl>
             <div className="mb-4">
               <dt className="mb-1">
                 <label htmlFor="名前" className="text-xl">
@@ -20,31 +33,45 @@ const Contact = () => {
                 </label>
               </dt>
               <dd className="w-2xl">
-                <input type="text" id="名前" name="名前" className={css.inputWidth}/>
+                <input
+                  type="text"
+                  id="名前"
+                  className={css.inputWidth}
+                 {...register("name")}
+                />
               </dd>
             </div>
-             <div className="mb-4">
+            <div className="mb-4">
               <dt className="mb-1">
                 <label htmlFor="メール" className="text-xl">
                   メールアドレス<span className={css.must}>必須</span>
                 </label>
               </dt>
               <dd>
-                <input type="email" id="メール" name="メール" className={css.inputWidth} />
+                <input
+                  type="email"
+                  id="メール"
+                  className={css.inputWidth}
+                 
+                />
               </dd>
             </div>
-             <div className="mb-4">
+            <div className="mb-4">
               <dt className="mb-1">
                 <label htmlFor="件名" className="text-xl">
                   件名<span className={css.must}>必須</span>
                 </label>
               </dt>
               <dd>
-                <input type="text" id="件名" name="件名" className={css.inputWidth}/>
+                <input
+                  type="text"
+                  id="件名"
+                  className={css.inputWidth}
+               
+                />
               </dd>
             </div>
-             <div className="mb-4">
-           
+            <div className="mb-4">
               <dt className="mb-1">
                 <label htmlFor="内容" className="text-xl">
                   お問い合わせ内容<span className={css.must}>必須</span>
@@ -54,15 +81,35 @@ const Contact = () => {
                 <textarea
                   type="text"
                   id="内容"
-                  name="内容"
                   colc="80"
                   rows="6"
                   className={css.textarea}
+                  
                 />
               </dd>
             </div>
-             <div className="mb-4">
-              <button type="submit" className="text-lg">送信</button>
+            <div className={css.border3px}>
+              <div className={css.border2px}>
+                <p className="w-10/12 mx-auto my-4">
+                  お客様からお預かりした個人情報は
+                  お問い合わせに関するやり取りのみに使用いたします。
+                  <br />
+                  また、お預かりした個人情報は適切に管理し、
+                  次のいずれかに該当する場合を除き、
+                  個人情報を第三者に提供しません。
+                  <br />
+                  <br />
+                  ・お客様の同意がある場合
+                  <br />
+                  ・法令に基づき開示することが必要である場合
+                </p>
+              </div>
+            </div>
+            <div className="mb-6 font-semibold"><label><input type="checkbox" />上記の入力事項及び注意事項を確認しました。</label></div>
+            <div className="mb-4 text-center">
+              <button type="submit" className={`${css.button} text-xl`}>
+                送信
+              </button>
             </div>
           </dl>
         </form>

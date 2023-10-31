@@ -5,6 +5,8 @@ import Profile from './components/Profile'
 import Skill from './components/Skill'
 import Work from './components/Work'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
+import ReturnTopButton from './components/ReturnTopButton'
 
 export default function Home() {
   return (
@@ -17,7 +19,8 @@ export default function Home() {
      <Work/>
      <Contact/>
     </main>
-    
+    <Footer/>
+    <ReturnTopButton/>
     </>
   )
 }
