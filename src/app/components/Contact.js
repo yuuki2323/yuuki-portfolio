@@ -35,10 +35,10 @@ const submit = (data) =>{
               <dd className="w-2xl">
                 <input
                   type="text"
-                  id="名前"
+                  
                   className={css.inputWidth}
                  {...register("name", {required:"名前は必須です"})}
-                 name="お名前"
+                 name="name"
                 />
                 <p className="text-red-500">{errors.name?.message}</p>
               </dd>
@@ -52,7 +52,7 @@ const submit = (data) =>{
               <dd>
                 <input
                   type="email"
-                  id="メール"
+                  
                   className={css.inputWidth}
                   {...register("email" , {required:"メールは必須です"})}
                   name="email"
@@ -69,7 +69,7 @@ const submit = (data) =>{
               <dd>
                 <input
                   type="text"
-                  id="件名"
+                  
                   className={css.inputWidth}
                   {...register("件名" , {required:"件名は必須です"})}
                   name="件名"
@@ -86,12 +86,12 @@ const submit = (data) =>{
               <dd>
                 <textarea
                   type="text"
-                  id="内容"
+                  
                   colc="80"
                   rows="6"
                   className={css.textarea}
                   {...register("内容" , {required:"内容は必須です"})}
-                  name="お問い合わせ内容"
+                  name="内容"
                 />
                 <p className="text-red-500">{errors.内容?.message}</p>
               </dd>
