@@ -10,7 +10,7 @@ const Contact = () => {
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm()
+  } = useForm();
 
 const submit = (data) =>{
   console.log(data);
@@ -24,7 +24,7 @@ const submit = (data) =>{
         >
           Contact
         </h2>
-        <form onSubmit={handleSubmit(submit)} className="max-w-3xl mx-auto">
+        <form onSubmit={handleSubmit(submit)} method="post" action="https://hyperform.jp/api/6peDG32f" className="max-w-3xl mx-auto">
           <dl>
             <div className="mb-4">
               <dt className="mb-1">
@@ -37,8 +37,10 @@ const submit = (data) =>{
                   type="text"
                   id="名前"
                   className={css.inputWidth}
-                 {...register("name")}
+                 {...register("name", {required:"名前は必須です"})}
+                 name="お名前"
                 />
+                <p className="text-red-500">{errors.name?.message}</p>
               </dd>
             </div>
             <div className="mb-4">
@@ -52,8 +54,10 @@ const submit = (data) =>{
                   type="email"
                   id="メール"
                   className={css.inputWidth}
-                 
+                  {...register("email" , {required:"メールは必須です"})}
+                  name="email"
                 />
+                <p className="text-red-500">{errors.email?.message}</p>
               </dd>
             </div>
             <div className="mb-4">
@@ -67,8 +71,10 @@ const submit = (data) =>{
                   type="text"
                   id="件名"
                   className={css.inputWidth}
-               
+                  {...register("件名" , {required:"件名は必須です"})}
+                  name="件名"
                 />
+                <p className="text-red-500">{errors.件名?.message}</p>
               </dd>
             </div>
             <div className="mb-4">
@@ -84,8 +90,10 @@ const submit = (data) =>{
                   colc="80"
                   rows="6"
                   className={css.textarea}
-                  
+                  {...register("内容" , {required:"内容は必須です"})}
+                  name="お問い合わせ内容"
                 />
+                <p className="text-red-500">{errors.内容?.message}</p>
               </dd>
             </div>
             <div className={css.border3px}>
