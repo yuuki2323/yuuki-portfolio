@@ -6,10 +6,10 @@ import { TitleFont } from '../fonts/TitleFont';
 
 const MainPhoto = () => {
   return (
-    <section className="py-20">
-      <div className="max-w-5xl h-96 mx-auto  my-12  flex gap-20 ">
+    <section className="py-10 md:py-16 xl:py-36">
+      <div className="container mx-auto  flex justify-center  items-center space-x-12 md:space-x-18 xl:space-x-48 px-4 md:px-8">
       <div>
-        <p className={`${css.text} ${TitleFont.className}`}>
+        <p className={`${css.text} ${TitleFont.className}  text-4xl md:text-8xl xl:text-9xl`}>
           Yuki&apos;s
           <br />
           Portfolio
