@@ -7,19 +7,19 @@ import { TitleFont } from '../fonts/TitleFont';
 
 const Header = () => {
   const navi = [
-    { nav: "Profile", href: "#profile" },
-    { nav: "Skill", href: "#skill" },
-    { nav: "Works", href: "#work" },
-    { nav: "Contact", href: "#contact" },
+    { nav: "Profile", href: "/#profile" },
+    { nav: "Skill", href: "/#skill" },
+    { nav: "Works", href: "/#work" },
+    { nav: "Contact", href: "/#contact" },
   ];
 
   // {' ${css.shadow-bottom}`}
   return (
-    <header className={`px-4 ${css.shadow} `}>
-      <div className="h-24 flex justify-between items-center max-w-5xl mx-auto ">
-        <h1 className="flex justify-center items-center h-20">
+    <header >
+      <div className="container h-24 flex justify-between items-center  mx-auto ">
+        <h1 className=" justify-center items-center h-20">
           <Link href="/">
-            <Image src={logo} width="112" alt="logo" className="h-16 w-auto" />
+            <Image src={logo} width="112" alt="logo" className="h-16 min-w-min" />
           </Link>
         </h1>
 
