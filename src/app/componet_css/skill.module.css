@@ -1,5 +1,5 @@
 .loop{
-  animation: loop-list 20s linear infinite;
+  animation: loop-list 30s linear infinite;
 }
 @keyframes loop-list {
   from {
@@ -8,4 +8,8 @@
   to {
       transform: translateX(-100%);
   }
+}
+
+.loop10{
+  animation: loop-list 20s linear infinite;
 }

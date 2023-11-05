@@ -11,59 +11,62 @@ import loop from "../componet_css/skill.module.css"
 
 const Skill = () => {
   return (
-    <section className=" py-20" id="skill">
-      <div className="max-w-5xl mx-auto ">
+    <section className="container px-4 py-8 md:py-20" id="skill">
+      <div className=" mx-auto ">
         <h2
-          className={`  text-center text-8xl tracking-wider ${TitleFont.className} text-gray-800`}
+          className={`text-center text-4xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wider ${TitleFont.className} text-gray-800`}
         >
           Skill
         </h2>
 
-        <h3 className="text-2xl font-semibold mt-4 text-gray-800 text-center">
-          ―日々、技術向上のために最新情報や知識などを学習しております―
+        <h3 className="text-center md:text-2xl font-semibold mt-4 text-gray-800 mx-auto">
+          日々、技術向上のために最新情報や知識などを<br/>学習しております
         </h3>
 
-        <div className=" h-104 mt-12 flex overflow-hidden shrink-0 max-w-5xl">
-        <ul className={`flex shrink-0 w-max items-center ${loop.loop}`} >
-          <li className="w-1/3 mx-12">
-            <Image src={html} alt={html} width="100%" />
+        <div className="mt-8  md:h-104 md:mt-12 flex overflow-hidden shrink-0 ">
+        <ul className={`flex shrink-0 items-center ${loop.loop}`} >
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12">
+            <Image src={html} alt={html} className="w-1/2 md:w-full" />
           </li>
-          <li className="w-1/3 mx-12">
-            <Image src={css} alt={css} width="100%"  />
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12 ">
+            <Image src={css} alt={css} className="w-1/2 md:w-full"  />
           </li>
-          <li className="w-1/3 mx-12">
-            <Image src={tailwindcss} alt={tailwindcss} width="100%"  />
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12 ">
+            <Image src={tailwindcss} alt={tailwindcss} className="w-1/2 md:w-full"  />
           </li>
-          <li className="w-1/3 mx-12">
-            <Image src={js} alt={js} width="100%" />
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12 ">
+            <Image src={js} alt={js} className="w-1/2 md:w-full" />
           </li>
-          <li className=" w-1/3 mx-12">
-            <Image src={react} alt={react} width="100%" />
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12 ">
+            <Image src={react} alt={react} className="w-1/2 md:w-full" />
           </li>
-          <li className="w-1/3 mx-12">
-            <Image src={next} alt={next} width="100%" />
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12">
+            <Image src={next} alt={next} className="w-1/2 md:w-full" />
+          </li>
+          
+        </ul>
+        <ul className={`flex shrink-0 items-center ${loop.loop}`} >
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12">
+            <Image src={html} alt={html}  className="w-1/2 md:w-full"/>
+          </li>
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12">
+            <Image src={css} alt={css}  className="w-1/2 md:w-full" />
+          </li>
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12">
+            <Image src={tailwindcss} alt={tailwindcss} className="w-1/2 md:w-full"  />
+          </li>
+          <li className=" w-1/6 md:w-1/3 mx-2 md:mx-12">
+            <Image src={js} alt={js} className="w-1/2 md:w-full" />
+          </li>
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12">
+            <Image src={react} alt={react} className="w-1/2 md:w-full" />
+          </li>
+          <li className="w-1/6 md:w-1/3 mx-2 md:mx-12">
+            <Image src={next} alt={next} className="w-1/2 md:w-full" />
           </li>
         </ul>
-        <ul className={`flex shrink-0 w-max items-center ${loop.loop}`} >
-          <li className="w-1/3 mx-12">
-            <Image src={html} alt={html} width="100%" />
-          </li>
-          <li className="w-1/3 mx-12">
-            <Image src={css} alt={css} width="100%"  />
-          </li>
-          <li className="w-1/3 mx-12">
-            <Image src={tailwindcss} alt={tailwindcss} width="100%"  />
-          </li>
-          <li className="w-1/3 mx-12">
-            <Image src={js} alt={js} width="100%" />
-          </li>
-          <li className=" w-1/3 mx-12">
-            <Image src={react} alt={react} width="100%" />
-          </li>
-          <li className="w-1/3 mx-12">
-            <Image src={next} alt={next} width="100%" />
-          </li>
-        </ul>
+        
+
         </div>
       
 

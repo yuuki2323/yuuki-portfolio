@@ -5,18 +5,18 @@ import takoyaki from "/public/takoyaki.png";
 
 const Profile = () => {
   return (
-    <section className="bg-blue-100 px-4 py-8 xl:py-20" id="profile">
+    <section className="bg-blue-100 px-8 py-8 xl:py-20" id="profile">
       <div className="container mx-auto ">
         
         <h2
-          className={`  text-center text-4xl xl:text-8xl tracking-wider ${TitleFont.className} text-gray-800`}
+          className={`  text-center text-4xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wider ${TitleFont.className} text-gray-800`}
         >
           Profile
         </h2>
 
-        <div className="mt-4 md:flex md:justify-center md:gap-12  md:h-104 md:mt-10">
+        <div className="mt-4 md:flex md:justify-center md:gap-8  md:h-104 md:mt-10">
           <div className="hidden md:block">
-            <Image src={takoyaki} alt="takoyaki" width={400} />
+            <Image src={takoyaki} alt="takoyaki" width={240} />
             <p className="text-3xl font-semibold mt-4 text-gray-800 text-center">
               大阪出身
             </p>
@@ -24,13 +24,13 @@ const Profile = () => {
 
           <div className="mx-auto">
             <div className="flex items-center">
-              <div className="md:hidden w-8">
+              <div className="md:hidden w-40 text-center mr-2">
               <Image src={takoyaki} alt="takoyaki" />
-              <p>大阪出身</p>
+              <p className="text-sm">大阪出身</p>
               </div>
 
             
-            <h3 className=" text-base xl:text-2xl font-semibold  text-gray-800">クライアント様が毎日見たくなるような綺麗で見やすいホームページ製作を目指しています。</h3>
+            <h3 className=" text-base md:text-xl xl:text-2xl font-semibold  text-gray-800">クライアント様が毎日見たくなるような綺麗で見やすいホームページ製作を目指しています。</h3>
             </div>
            
             
