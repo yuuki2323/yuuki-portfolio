@@ -4,6 +4,7 @@ import React from "react";
 import logo from "public/Yuki's Portfolio-logo.png";
 import { TitleFont } from '../fonts/TitleFont';
 import { LuAlignJustify } from "react-icons/lu";
+import Humberger from "./Humberger";
 
 
 const Header = () => {
@@ -43,9 +44,7 @@ const Header = () => {
           </nav>
         </div>
         {/* スマホメニュー */}
-        <div className="md:hidden">
-          <LuAlignJustify size={48} />
-        </div>
+       <Humberger/>
 
 
       </div>

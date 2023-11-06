@@ -1,0 +1,121 @@
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+  /* ボタンの配置位置  */
+  position: absolute;
+  top:24px;
+  right:16px;
+  /* ボタンの大きさ  */
+  width: 58px;
+  height: 48px;
+  /* バーガーの線をボタン範囲の中心に配置 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 最前面に */
+  z-index: 10;
+}
+
+/***** 真ん中のバーガー線 *****/
+.btn_line {
+  /* 線の長さと高さ */
+  width: 100%;
+  height: 4px;
+  /* バーガー線の色 */
+  background-color: #333;
+  /* バーガー線の位置基準として設定 */
+  position: relative;
+  transition: .2s;
+}
+
+/***** 上下のバーガー線 *****/
+.btn_line::before,
+.btn_line::after {
+  content: "";
+  /* 基準線と同じ大きさと色 */
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transition: .2s;
+}
+
+
+.btn_line::before {
+  /* 上の線の位置 */
+  transform: translateY(-16px);
+}
+
+
+.btn_line::after {
+  /* 下の線の位置 */
+  transform: translateY(16px);
+}
+
+/***** メニューオープン時 *****/
+.btn_line.open {
+  /* 真ん中の線を透明に */
+  background-color: transparent;
+}
+
+.btn_line.open::before,
+.btn_line.open::after {
+  content: "";
+  transition: .2s;
+}
+
+.btn_line.open::before {
+  /* 上の線を傾ける */
+  transform: rotate(45deg);
+}
+
+.btn_line.open::after {
+  /* 上の線を傾ける */
+  transform: rotate(-45deg);
+}
+
+/**************** ここまで、ハンバーガーボタンのスタイリング ****************/
+
+/**************** 以下、メニューのスタイリング ****************/
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+/*  メニューを非表示に  */
+  display: hidden;
+  opacity: 0;
+  /* メニューを縦に */
+  display: flex;
+  flex-direction: column;
+  color: #434343;
+  background-color: rgb(255, 255, 255);
+  transition: opacity .3s;
+}
+
+.menu_list {
+  width: 100%;
+  height: 100%;
+  /* メニューテキスト位置をリスト内中心に */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.menu_list:hover {
+  color: #333;
+  background-color: rgba(218, 211, 206, 0.823);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.menu.open {
+/*   transition: visibility 1s ease-in; */
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .5s;
+}
