@@ -9,7 +9,7 @@ const Humberger = () => {
   }
   return (
     <div className="md:hidden">
-      <button type="button" className={css.btn} onClick={hundleClick}>
+      <button type="button" className={`${css.btn} ${open ? "fixed top-6 right-4": "absolute top-6 right-4 "} `} onClick={hundleClick}>
         <span className={open ? `${css.btn_line} ${css.open}`: css.btn_line }></span>
       </button>
       <nav>

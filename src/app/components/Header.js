@@ -22,7 +22,7 @@ const Header = () => {
         {/* ロゴ */}
         <h1 className="">
           <Link href="/">
-            <Image src={logo}  alt="logo" className=" max-h-16 md:max-h-20 xl:max-h-24 w-auto" />
+            <Image src={logo}  alt="logo" className=" max-h-14 md:max-h-20 xl:max-h-24 w-auto" />
           </Link>
         </h1>
         {/* pcメニュー */}
