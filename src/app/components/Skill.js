@@ -28,72 +28,70 @@ const Skill = () => {
         </h3>
 
         <div className="mt-8  md:h-104 md:mt-12 flex overflow-hidden  ">
-
         <ul className={`flex shrink-0 justify-center items-center ${loop.loop}`} >
-          <li className="mx-2 md:mx-12  shrink-0 ">
-            <Image src={html} alt={html} className="w-1/2 md:w-full block" />
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={html} alt={html} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={css} alt={css} className="w-full block"  />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={tailwindcss} alt={tailwindcss} className="w-full block"  />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={js} alt={js} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={react} alt={react} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={next} alt={next} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={php} alt={php} className="w-full block"  />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={laravel} alt={laravel} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  " >
+            <Image src={mysql} alt={mysql} className="w-full block" />
           </li>
           <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={css} alt={css} className="w-1/2 md:w-full block"  />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={tailwindcss} alt={tailwindcss} className="w-1/2 md:w-full block"  />
-          </li>
-          <li className=" mx-2 md:mx-12 ">
-            <Image src={js} alt={js} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={react} alt={react} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={next} alt={next} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={php} alt={php} className="w-1/2 md:w-full block"  />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={laravel} alt={laravel} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 " >
-            <Image src={mysql} alt={mysql} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12">
-            <Image src={java} alt={java} className="w-1/2 md:w-full block" />
+            <Image src={java} alt={java} className="w-full block" />
           </li>
         </ul>
         <ul className={`flex shrink-0 justify-center items-center ${loop.loop}`} >
-          <li className="mx-2 md:mx-12  shrink-0 ">
-            <Image src={html} alt={html} className="w-1/2 md:w-full block" />
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={html} alt={html} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={css} alt={css} className="w-full block"  />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={tailwindcss} alt={tailwindcss} className="w-full block"  />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={js} alt={js} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={react} alt={react} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={next} alt={next} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={php} alt={php} className="w-full block"  />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  ">
+            <Image src={laravel} alt={laravel} className="w-full block" />
+          </li>
+          <li className=" mx-2 md:mx-12  shrink-0  " >
+            <Image src={mysql} alt={mysql} className="w-full block" />
           </li>
           <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={css} alt={css} className="w-1/2 md:w-full block"  />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={tailwindcss} alt={tailwindcss} className="w-1/2 md:w-full block"  />
-          </li>
-          <li className=" mx-2 md:mx-12 ">
-            <Image src={js} alt={js} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={react} alt={react} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={next} alt={next} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={php} alt={php} className="w-1/2 md:w-full block"  />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 ">
-            <Image src={laravel} alt={laravel} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12  shrink-0 " >
-            <Image src={mysql} alt={mysql} className="w-1/2 md:w-full block" />
-          </li>
-          <li className=" mx-2 md:mx-12">
-            <Image src={java} alt={java} className="w-1/2 md:w-full block" />
+            <Image src={java} alt={java} className="w-full block" />
           </li>
         </ul>
-
         </div>
       
 
